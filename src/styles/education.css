@@ -1,0 +1,50 @@
+.education {
+  padding: 90px 150px;
+  background: #000;
+  color: white;
+}
+
+.education-card {
+  max-width: 700px;
+  margin: 60px auto 0;
+  padding: 30px 40px;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  background: #0b0b0b;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: #00e5ff;
+}
+
+.education-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+.college {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.year {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.desc {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.cgpa{
+    font-size: 18px;
+    padding-bottom: 12px;
+    padding-top: 8px;
+}
