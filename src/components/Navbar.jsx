@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
-import profile from "/profile.png"; // public folder image
+import profile from "/profile.png";
 
-const Navbar = () => {
+const Navbar = () =>{
   return (
     <nav className="navbar">
       {/* LEFT SIDE */}
@@ -17,27 +17,31 @@ const Navbar = () => {
             <i className="fa-solid fa-house"></i> Home
           </a>
         </li>
+
         <li>
           <a href="#about">
             <i className="fa-solid fa-user"></i> About
           </a>
         </li>
+
         <li>
-             <a href="#skills">
+          <a href="#skills">
             <i className="fa-solid fa-laptop-code"></i> Skills
           </a>
         </li>
+
         <li>
           <a href="#projects">
             <i className="fa-solid fa-code"></i> Projects
           </a>
         </li>
+
         <li>
-         
           <a href="#contact">
             <i className="fa-solid fa-envelope"></i> Connect
           </a>
         </li>
+
       </ul>
     </nav>
   );

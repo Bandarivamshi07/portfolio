@@ -79,13 +79,21 @@
   border: 1px solid #1f1f1f;
   border-radius: 8px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  
+}
+/* Placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white;            /* 🔥 cyan color */
+  opacity: 0.8;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #00e5ff;
+  
 }
 
 .contact-form button {

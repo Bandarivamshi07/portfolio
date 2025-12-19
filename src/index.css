@@ -4,27 +4,37 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: black;
-}
 html {
   scroll-behavior: smooth;
 }
 
-.section {
-  padding: 60px 150px;
-  background: black;
-  color: white;
+/* Smooth transition (GLOBAL) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ☀️ LIGHT MODE */
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Sections */
+section {
+  padding: 80px 150px;
+  scroll-margin-top: 80px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
   section {
-  scroll-margin-top: 80px; /* navbar height */
-}
-
-}
-
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #00e5ff;
-  display: inline-block;
+    padding: 60px 25px;
+  }
 }

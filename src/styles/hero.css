@@ -1,19 +1,18 @@
 .hero {
-  /* min-height: 100vh; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 120px 150px 60px;
-  
+  justify-content: center;
+  padding: -50px 200px 50px;
   padding-top: 200px;
   background: black;
   color: white;
+  gap: 60px;
 }
 
 /* LEFT */
 .hero-left {
-  max-width: 55%;
-  padding-left: 55px;
+  max-width: 48%;
+  padding-left: 80px;
 }
 
 .hero-left h1 {
@@ -78,4 +77,50 @@
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #00e5ff;
+}
+
+/* ========================= */
+/* 🔥 MOBILE RESPONSIVE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;      /* ⬅️ key fix */
+    text-align: center;
+    padding: 140px 20px 60px;    /* navbar space + mobile padding */
+  }
+
+  .hero-left {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+    max-width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  .hero-right img {
+    width: 220px;
+    height: 220px;
+  }
 }
