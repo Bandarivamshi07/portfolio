@@ -86,7 +86,7 @@
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 120px 20px 40px;   /* ⬅️ reduce bottom space */
+    padding: 110px 20px 20px;  /* ⬅️ KEY FIX */
   }
 
   .hero-left {
@@ -101,27 +101,27 @@
 
   .hero-left h2 {
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .hero-left p {
     font-size: 14px;
     max-width: 90%;
-    margin: 0 auto 20px;
+    margin: 0 auto 18px;
   }
 
   .hero-buttons {
     justify-content: center;
-    gap: 14px;
-    margin-bottom: 25px; /* ⬅️ space before image */
+    gap: 12px;
+    margin-bottom: 18px;
   }
 
   .hero-right {
-    margin-top: 0;   /* ⬅️ REMOVE extra gap */
+    margin-top: 0;   /* ⬅️ IMPORTANT */
   }
 
   .hero-right img {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
   }
 }
