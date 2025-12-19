@@ -1,8 +1,6 @@
 .about {
-  padding: 80px 150px;
   background: #000000;
   color: white;
-  padding-top: 50px;
 }
 
 /* SECTION TITLE */
@@ -11,7 +9,7 @@
   text-align: center;
   margin-bottom: 60px;
   position: relative;
-  padding-left: 80px;
+  padding-left: 0; /* ❌ remove dangerous padding */
 }
 
 .section-title::after {
@@ -57,11 +55,36 @@
   margin-bottom: 18px;
 }
 
+/* ========================= */
+/* TABLET (<=1024px)         */
+/* ========================= */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 40px;
+  }
+
+  .about-image img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<=768px)          */
+/* ========================= */
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column;   /* 🔥 KEY FIX */
+    flex-direction: column;
     text-align: center;
     gap: 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
   }
 
   .about-image img {
@@ -75,4 +98,3 @@
     margin: 0 auto;
   }
 }
-

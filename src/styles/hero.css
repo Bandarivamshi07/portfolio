@@ -3,16 +3,15 @@
   align-items: center;
   justify-content: center;
   gap: 60px;
-  padding: 140px 150px 60px;
+  padding: 140px 150px 60px; /* desktop */
   background: black;
   color: white;
 }
 
-
 /* LEFT */
 .hero-left {
   max-width: 48%;
-  padding-left: 80px;
+  padding-left: 0; /* ❌ remove dangerous padding */
 }
 
 .hero-left h1 {
@@ -80,18 +79,48 @@
 }
 
 /* ========================= */
-/* 🔥 MOBILE RESPONSIVE FIX */
+/* TABLET (<=1024px)         */
+/* ========================= */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 130px 80px 50px;
+    gap: 40px;
+  }
+
+  .hero-left {
+    max-width: 55%;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left h2 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 18px;
+  }
+
+  .hero-right img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<=768px)          */
 /* ========================= */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 110px 20px 20px;  /* ⬅️ KEY FIX */
+    padding: 110px 20px 20px;
   }
 
   .hero-left {
     max-width: 100%;
-    padding-left: 0;
   }
 
   .hero-left h1 {
@@ -114,10 +143,6 @@
     justify-content: center;
     gap: 12px;
     margin-bottom: 18px;
-  }
-
-  .hero-right {
-    margin-top: 0;   /* ⬅️ IMPORTANT */
   }
 
   .hero-right img {

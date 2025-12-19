@@ -1,5 +1,4 @@
 .contact {
-  padding: 100px 150px;
   background: #000;
   color: white;
   text-align: center;
@@ -8,11 +7,13 @@
 /* Subtitle */
 .contact-sub {
   margin-top: 12px;
-  font-size: 23px;
+  font-size: 20px;
   color: #bbb;
 }
 
-/* Cards */
+/* ========================= */
+/* CONTACT CARDS             */
+/* ========================= */
 .contact-cards {
   display: flex;
   justify-content: center;
@@ -22,8 +23,8 @@
 }
 
 .contact-card {
-  width: 250px;
-  padding: 25px 20px;
+  width: 240px;
+  padding: 22px 18px;
   background: #0b0b0b;
   border: 1px solid #1f1f1f;
   border-radius: 16px;
@@ -39,20 +40,22 @@
 
 .contact-card span {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px;
   color: #00e5ff;
 }
 
 .contact-card p {
-  font-size: 15px;
+  font-size: 14px;
   color: #bbb;
 }
 
-/* MESSAGE FORM */
+/* ========================= */
+/* CONTACT FORM              */
+/* ========================= */
 .contact-form {
-  margin-top: 80px;
+  margin-top: 70px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -61,15 +64,15 @@
 
 .contact-form h3 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   color: #00e5ff;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
 .contact-form input,
@@ -79,13 +82,13 @@
   border: 1px solid #1f1f1f;
   border-radius: 8px;
   color: white;
-  font-size: 18px;
-  
+  font-size: 16px;
 }
-/* Placeholder color */
+
+/* Placeholder */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: white;            /* 🔥 cyan color */
+  color: #ccc;
   opacity: 0.8;
 }
 
@@ -93,7 +96,6 @@
 .contact-form textarea:focus {
   outline: none;
   border-color: #00e5ff;
-  
 }
 
 .contact-form button {
@@ -112,3 +114,42 @@
   background: #00c7db;
 }
 
+/* ========================= */
+/* TABLET (<=1024px)         */
+/* ========================= */
+@media (max-width: 1024px) {
+  .contact-sub {
+    font-size: 18px;
+  }
+
+  .contact-card {
+    width: 220px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<=768px)          */
+/* ========================= */
+@media (max-width: 768px) {
+  .contact-sub {
+    font-size: 16px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+  }
+
+  .contact-form h3 {
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}

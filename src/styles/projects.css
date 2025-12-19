@@ -1,15 +1,18 @@
 .projects {
-  padding: 80px 150px;
   background: #000;
   color: white;
 }
 
+/* ========================= */
+/* GRID (DESKTOP DEFAULT)    */
+/* ========================= */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 🔥 CONTROLLED */
   gap: 40px;
 }
 
+/* PROJECT CARD */
 .project-card {
   background: #0a0a0a;
   border-radius: 14px;
@@ -26,7 +29,7 @@
 
 .project-card img {
   width: 100%;
-  height: 250px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -62,13 +65,14 @@
   background: white;
 }
 
+/* TECH STACK */
 .tech-stack {
   display: flex;
-  justify-content: center;   /* 🔥 CENTER */
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 12px;
+  margin: 12px 0 18px;
 }
 
 .tech-stack span {
@@ -86,3 +90,38 @@
   color: black;
 }
 
+/* ========================= */
+/* TABLET (<=1024px)         */
+/* ========================= */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* 🔥 stack */
+    gap: 30px;
+  }
+
+  .project-card img {
+    height: 220px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<=768px)          */
+/* ========================= */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+}
