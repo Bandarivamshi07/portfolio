@@ -1,17 +1,17 @@
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* ✅ FIX */
   gap: 60px;
-  padding: 140px 150px 60px; /* desktop */
+
+  padding: 120px 150px 60px; /* navbar space */
   background: black;
   color: white;
 }
 
 /* LEFT */
 .hero-left {
-  max-width: 48%;
-  padding-left: 0; /* ❌ remove dangerous padding */
+  max-width: 520px;      /* ✅ FIXED WIDTH */
 }
 
 .hero-left h1 {
@@ -79,16 +79,12 @@
 }
 
 /* ========================= */
-/* TABLET (<=1024px)         */
+/* TABLET (≤1024px)          */
 /* ========================= */
 @media (max-width: 1024px) {
   .hero {
-    padding: 130px 80px 50px;
+    padding: 110px 80px 50px;
     gap: 40px;
-  }
-
-  .hero-left {
-    max-width: 55%;
   }
 
   .hero-left h1 {
@@ -110,13 +106,13 @@
 }
 
 /* ========================= */
-/* MOBILE (<=768px)          */
+/* MOBILE (≤768px)           */
 /* ========================= */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 110px 20px 20px;
+    padding: 110px 20px 30px;
   }
 
   .hero-left {
@@ -130,7 +126,6 @@
 
   .hero-left h2 {
     font-size: 18px;
-    margin-bottom: 10px;
   }
 
   .hero-left p {
