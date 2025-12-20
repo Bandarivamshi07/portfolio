@@ -175,8 +175,10 @@
     gap: 14px;
   }
 
+  /* 🔥 THIS WAS MISSING */
   .hero-right img {
     width: 220px;
     height: 220px;
+    transform: translateY(30px); /* 👈 IMAGE DOWN */
   }
 }
