@@ -1,91 +1,53 @@
 .about {
-  background: #000000;
-  color: white;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 80px 0;
 }
 
-/* SECTION TITLE */
 .section-title {
-  font-size: 36px;
   text-align: center;
-  margin-bottom: 60px;
-  position: relative;
-  padding-left: 0; /* ❌ remove dangerous padding */
+  margin-bottom: 40px;
 }
 
-.section-title::after {
-  content: "";
-  width: 80px;
-  height: 3px;
-  background: #00e5ff;
-  display: block;
-  margin: 12px auto 0;
-}
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-/* CONTENT */
-.about-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-/* IMAGE */
 .about-image img {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
+  border: 3px solid #00e5ff;
   object-fit: cover;
-  border: 4px solid #00e5ff;
 }
 
-/* TEXT */
-.about-text {
-  max-width: 600px;
-  font-size: 22px;
+.about-content {
+  max-width: 520px;
   line-height: 1.7;
-  color: #d0d0d0;
+  font-size: 16px;
+  color: #ccc;
 }
 
-.about-text span {
-  color: #00e5ff;
-  font-weight: bold;
-}
-
-.about-text p {
-  margin-bottom: 18px;
-}
-
-/* ========================= */
-/* TABLET (<=1024px)         */
-/* ========================= */
-@media (max-width: 1024px) {
-  .about-content {
-    gap: 40px;
-  }
-
-  .about-image img {
-    width: 240px;
-    height: 240px;
-  }
-
-  .about-text {
-    font-size: 18px;
-  }
-}
-
-/* ========================= */
-/* MOBILE (<=768px)          */
-/* ========================= */
+/* 📱 MOBILE */
 @media (max-width: 768px) {
   .about {
-    padding: 60px 16px;
+    padding: 60px 0;
   }
 
   .about-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 28px;
+    gap: 30px;
+    padding: 0 16px;
   }
 
   .about-image img {
@@ -94,8 +56,7 @@
   }
 
   .about-content {
-    max-width: 520px;
+    max-width: 100%;
     font-size: 14px;
-    line-height: 1.7;
   }
 }
