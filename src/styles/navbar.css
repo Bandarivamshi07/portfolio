@@ -1,72 +1,80 @@
+/* ============================= */
+/* NAVBAR BASE                   */
+/* ============================= */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-
-  background: black;
-  color: white;
-
-  z-index: 1000;
+  background: #000;
   border-bottom: 1px solid #222;
-}
-
-/* INNER CONTAINER (KEY FIX) */
-.navbar-inner {
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 24px;
+  z-index: 1000;
 
   display: flex;
+  flex-wrap: wrap; /* 🔥 key */
   align-items: center;
   justify-content: space-between;
+
+  padding: 12px 32px;
 }
 
-/* LEFT */
+/* ============================= */
+/* LEFT SIDE                     */
+/* ============================= */
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .nav-avatar {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 2px solid #00e5ff;
   object-fit: cover;
 }
 
 .nav-name {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
 }
 
-/* RIGHT LINKS */
+/* ============================= */
+/* RIGHT LINKS                   */
+/* ============================= */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 26px;
+  gap: 22px;
+  padding: 0;
+  margin: 0;
 }
 
+.nav-links li {
+  display: flex;
+}
+
+/* LINK + ICON */
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
   position: relative;
 }
 
+/* ICON COLOR (FIX 🔥) */
 .nav-links i {
   color: #00e5ff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-/* Hover underline */
+/* UNDERLINE HOVER */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -82,41 +90,24 @@
   width: 100%;
 }
 
-/* ========================= */
-/* TABLET                    */
-/* ========================= */
-@media (max-width: 1024px) {
-  .nav-links {
-    gap: 18px;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-}
-
-/* ========================= */
-/* MOBILE (IMPORTANT FIX)    */
-/* ========================= */
+/* ============================= */
+/* MOBILE — MENU BELOW NAME      */
+/* ============================= */
 @media (max-width: 768px) {
   .navbar {
-    height: 70px;
+    justify-content: center;
   }
 
-  .nav-name {
-    font-size: 18px;
-  }
-
-  /* 🔥 ICONS ONLY */
-  .nav-links a span {
-    display: none;
+  .nav-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
   }
 
   .nav-links {
-    gap: 14px;
-  }
-
-  .nav-links i {
-    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }

@@ -1,25 +1,37 @@
-<section id="home" className="hero">
-  <div className="hero-inner">
+import "../styles/hero.css";
 
-    {/* IMAGE FIRST */}
-    <div className="hero-right">
-      <img src="/coding.png" alt="Profile" />
-    </div>
+export default function Hero() {
+  return (
+    <section id="home" className="hero">
+      <div className="hero-inner">
+        {/* LEFT CONTENT */}
+        <div className="hero-left">
+          <h1>
+            Hi, I&apos;m <span className="highlight">Bandari Vamshi</span>
+          </h1>
 
-    {/* TEXT SECOND */}
-    <div className="hero-left">
-      <h1>Hi, I'm <span className="highlight">Bandari Vamshi</span></h1>
-      <h2>Aspiring Software Developer</h2>
-      <p>
-        Building scalable full-stack applications and solving real-world
-        problems using modern web technologies.
-      </p>
+          <h2>Aspiring Software Developer</h2>
 
-      <div className="hero-buttons">
-        <a className="btn primary" href="#projects">View Projects</a>
-        <a className="btn secondary" href="/resume.pdf">Download Resume</a>
+          <p>
+            Building scalable full-stack applications and solving real-world
+            problems using modern web technologies.
+          </p>
+
+          <div className="hero-buttons">
+            <a href="#projects" className="btn primary">
+              View Projects
+            </a>
+            <a href="/resume.pdf" className="btn secondary" target="_blank">
+              Download Resume
+            </a>
+          </div>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="hero-right">
+          <img src="/coding.png" alt="Bandari Vamshi" />
+        </div>
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
+  );
+}

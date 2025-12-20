@@ -1,7 +1,7 @@
 import "../styles/navbar.css";
 import profile from "/profile.png";
 
-const Navbar = () =>{
+const Navbar = () => {
   return (
     <nav className="navbar">
       {/* LEFT SIDE */}
@@ -10,38 +10,42 @@ const Navbar = () =>{
         <span className="nav-name">Bandari Vamshi</span>
       </div>
 
-      {/* RIGHT SIDE */}
+      {/* RIGHT SIDE MENU */}
       <ul className="nav-links">
         <li>
           <a href="#home">
-            <i className="fa-solid fa-house"></i> Home
+            <i className="fa-solid fa-house"></i>
+            Home
           </a>
         </li>
 
         <li>
           <a href="#about">
-            <i className="fa-solid fa-user"></i> About
+            <i className="fa-solid fa-user"></i>
+            About
           </a>
         </li>
 
         <li>
           <a href="#skills">
-            <i className="fa-solid fa-laptop-code"></i> Skills
+            <i className="fa-solid fa-laptop-code"></i>
+            Skills
           </a>
         </li>
 
         <li>
           <a href="#projects">
-            <i className="fa-solid fa-code"></i> Projects
+            <i className="fa-solid fa-code"></i>
+            Projects
           </a>
         </li>
 
         <li>
           <a href="#contact">
-            <i className="fa-solid fa-envelope"></i> Connect
+            <i className="fa-solid fa-envelope"></i>
+            Connect
           </a>
         </li>
-
       </ul>
     </nav>
   );
