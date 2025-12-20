@@ -131,6 +131,7 @@
   .hero-right img {
     width: 260px;
     height: 260px;
+    transform: translateY(40px);
   }
 }
 
