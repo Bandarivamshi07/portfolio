@@ -5,15 +5,14 @@
   background: #000;
   display: flex;
   justify-content: center;
+  padding-top: 80px;        /* ONLY navbar height */
   padding-bottom: 40px;
-  padding-top: 80px;
-
 }
 
 .hero-inner {
   width: 100%;
   max-width: 1200px;
-  padding: 0 40px;
+  padding: 0 24px;
 
   display: flex;
   align-items: center;
@@ -26,16 +25,19 @@
 /* ============================= */
 .hero-left {
   flex: 1;
+  z-index: 2;               /* 🔥 ABOVE IMAGE */
 }
 
 .hero-left h1 {
-  font-size: 56px;
+  font-size: 55px;
   line-height: 1.2;
+  color: #00e5ff;
 }
 
 .hero-left h2 {
   font-size: 28px;
-  color: #00e5ff;
+  color: white;
+  margin-top: 8px;
 }
 
 .hero-left p {
@@ -43,15 +45,48 @@
   color: #ccc;
   max-width: 520px;
   line-height: 1.6;
+  margin-top: 12px;
 }
 
 /* ============================= */
-/* BUTTONS                       */
+/* BUTTONS (RESTORED)            */
 /* ============================= */
 .hero-buttons {
   display: flex;
   gap: 20px;
   margin-top: 28px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  border: 1px solid #00e5ff;
+  /* background: #00e5ff; */
+  color: #00e5ff;
+}
+
+.btn.primary:hover {
+   border: 1px solid #00e5ff;
+  background: #00e5ff;
+  color: #000;
+
+}
+
+.btn.secondary {
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+}
+
+.btn.secondary:hover {
+  border: 1px solid #00e5ff;
+  background: #00e5ff;
+  color: #000;
 }
 
 /* ============================= */
@@ -61,6 +96,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .hero-right img {
@@ -72,29 +108,27 @@
 }
 
 /* ============================= */
-/* MOBILE (≤768px) — REAL FIX   */
+/* MOBILE FIX (≤768px) 🔥        */
 /* ============================= */
 @media (max-width: 768px) {
+
   .hero {
-    padding-top: 140px;   /* 🔥 space for fixed navbar */
+    padding-top: 70px; /* navbar height */
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .hero-inner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 32px;
-    padding: 0;
+    gap: 24px;
   }
 
-  .hero-left {
-    order: 1;             /* TEXT FIRST */
-  }
-
+  /* 🔥 IMAGE FIRST */
   .hero-right {
-    order: 2;             /* IMAGE LAST */
-    margin-top: 24px;     /* IMAGE DOWN */
+    order: 1;
+    margin-bottom: 10px;
   }
 
   .hero-right img {
@@ -102,9 +136,9 @@
     height: 220px;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    gap: 14px;
+  /* 🔥 TEXT AFTER IMAGE */
+  .hero-left {
+    order: 2;
   }
 
   .hero-left h1 {
@@ -117,5 +151,11 @@
 
   .hero-left p {
     font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
   }
 }
