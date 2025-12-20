@@ -150,6 +150,7 @@
     align-items: center;
     text-align: center;
     gap: 24px;
+    padding: 130px;
   }
 
   .hero-left {
