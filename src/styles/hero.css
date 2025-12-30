@@ -5,9 +5,13 @@
   background: #000;
   display: flex;
   justify-content: center;
-  padding-top: 80px;        /* ONLY navbar height */
+
+  padding-top: 80px;
   padding-bottom: 40px;
+
+  min-height: calc(100vh - 80px); /* 🔥 VERY IMPORTANT */
 }
+
 
 .hero-inner {
   width: 100%;

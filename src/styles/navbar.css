@@ -9,20 +9,13 @@
   height: 80px;
 
   background: #000;
-  border-bottom: 1px solid #222;
-  z-index: 9999; /* 🔥 very high */
+  border-bottom: 1px solid lightgoldenrodyellow;
+
+  z-index: 99999; /* 🔥 increase this */
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 0 20px;
-  box-sizing: border-box;
-
-  /* 🔥 IMPORTANT SAFETY */
-  transform: none !important;
-  will-change: auto;
-  
 }
 
 /* ============================= */
