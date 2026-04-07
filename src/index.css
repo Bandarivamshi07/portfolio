@@ -13,6 +13,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
+
+  /* padding-top: 80px; */
 }
 
 /* 🌙 DARK MODE */
@@ -25,6 +27,7 @@ body.dark {
 body.light {
   background-color: #fff;
   color: #000;
+  padding-top: 80px;
 }
 
 /* ========================= */
