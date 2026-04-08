@@ -3,13 +3,16 @@
 /* ============================= */
 .hero {
   background: #000;
+  
   display: flex;
   justify-content: center;
 
   /* padding-top: 80px; */
   padding-bottom: 40px;
+  padding-top: 120px;
+min-height: auto;
 
-  min-height: calc(100vh - 80px); /* 🔥 VERY IMPORTANT */
+  /* min-height: calc(100vh - 80px); 🔥 VERY IMPORTANT */
 }
 
 
@@ -130,10 +133,11 @@
   }
 
   /* 🔥 IMAGE FIRST */
-  .hero-right {
-    order: 1;
-    margin-bottom: 10px;
-  }
+ .hero-right {
+  order: 1;
+  margin-top: 25px;   /* ✅ ADD */
+  margin-bottom: 10px;
+}
 
   .hero-right img {
     width: 220px;

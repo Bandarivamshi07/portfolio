@@ -27,15 +27,16 @@ body.dark {
 body.light {
   background-color: #fff;
   color: #000;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 /* ========================= */
 /* SECTION BASE              */
 /* ========================= */
 section {
-  padding: 80px 150px;
+  padding: 50px 100px;
   scroll-margin-top: 80px; /* 🔥 EXACT navbar height */
+  
 }
 
 /* ========================= */
@@ -43,7 +44,7 @@ section {
 /* ========================= */
 @media (max-width: 1024px) {
   section {
-    padding: 80px 80px;
+    padding: 80px 20px;
     scroll-margin-top: 80px;
   }
 }
