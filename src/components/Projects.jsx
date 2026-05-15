@@ -7,7 +7,46 @@ export default function Projects() {
 
       <div className="projects-grid">
 
-        {/* Project 1 */}
+         {/* Project 1 */}
+        <div className="project-card">
+          <img src="/jobportal.png" alt="Job Portal" />
+
+          <div className="project-content">
+            <h3>Job Portal</h3>
+            <p>
+              Full-stack job portal platform with recruiter dashboard,
+              job posting, authentication, resume uploads, and job applications.
+              Built with scalable MERN architecture and responsive UI.
+            </p>
+
+            <div className="tech-stack">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Express.js</span>
+            </div>
+
+            <div className="project-links">
+              <a
+                href="https://job-portal-client-git-main-bandari-vamshis-projects.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/Bandarivamshi07/Job-portal.git"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 2 */}
         <div className="project-card">
           <img src="/e-commerce.png" alt="E-Commerce Website" />
 
@@ -46,7 +85,7 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div className="project-card">
           <img src="/zerodha.png" alt="Zerodha Clone" />
 
@@ -68,7 +107,7 @@ export default function Projects() {
 
             <div className="project-links">
               <a
-                href="https://major-project-0odu.onrender.com/listings"
+                href="https://zerodha-clone-bay.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -106,7 +145,7 @@ export default function Projects() {
 
             <div className="project-links">
               <a
-                href="https://zerodha-clone-bay.vercel.app/"
+                href="https://major-project-0odu.onrender.com/listings"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -122,6 +161,8 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
+       
 
       </div>
     </section>
