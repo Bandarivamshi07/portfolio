@@ -129,7 +129,7 @@ export default function Projects() {
           <img src="/wanderlust.png" alt="Wanderlust" />
 
           <div className="project-content">
-            <h3>Wanderlust</h3>
+            <h3>Nestify</h3>
             <p>
               Airbnb-style travel booking web app using MERN stack,
               with listings, reviews, and CRUD functionality.
@@ -152,7 +152,7 @@ export default function Projects() {
                 Live
               </a>
               <a
-                href="https://github.com/Bandarivamshi07/wanderlust-fullstack-project"
+                href="https://github.com/Bandarivamshi07/Nestify--Property-Rental-Platform"
                 target="_blank"
                 rel="noreferrer"
               >
